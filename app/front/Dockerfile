@@ -9,6 +9,8 @@ COPY . .
 
 RUN chmod -x /usr/share/nginx/html/entrypoint.sh
 
+ENTRYPOINT ["/usr/share/nginx/html/entrypoint.sh"]
+
 # Expose port 80 for serving the frontend
 EXPOSE 80
 
