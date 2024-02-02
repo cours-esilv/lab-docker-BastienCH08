@@ -7,7 +7,7 @@ WORKDIR /usr/share/nginx/html
 # Copy the contents of the local 'app/front' directory to the container
 COPY . .
 
-RUN chmod -x /usr/share/nginx/html/entrypoint.sh
+RUN chmod +x /usr/share/nginx/html/entrypoint.sh
 
 ENTRYPOINT ["/usr/share/nginx/html/entrypoint.sh"]
 
