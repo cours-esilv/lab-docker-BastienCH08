@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    image: bastiench/backend-image
+    ports:
+      - "5000:5000"
+    container_name: my-backend-container
+    environment:
+      - CURRENT_ENVIRONMENT=production
+
+  frontend:
+    image: bastiench/frontend-image
+    ports:
+      - "8080:80"
+    environment:
+      - WS_BACK_URL=https://5000-coursesilv-labdockerbas-e3p51hc2nj2.ws-eu108.gitpod.io
+    container_name: my-frontend-container
