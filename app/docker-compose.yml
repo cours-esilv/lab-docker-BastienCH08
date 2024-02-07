@@ -7,7 +7,9 @@ services:
     container_name: my-backend-container
     environment:
       - CURRENT_ENVIRONMENT=production
-
+    # volumes:
+    #   - ./logs:/app/back/logs
+    
   frontend:
     image: bastiench/frontend-image
     ports:
