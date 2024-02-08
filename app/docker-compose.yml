@@ -4,7 +4,6 @@ services:
     image: bastiench/backend-image
     ports:
       - "5000:5000"
-    container_name: my-backend-container
     environment:
       - CURRENT_ENVIRONMENT=production
     # volumes:
